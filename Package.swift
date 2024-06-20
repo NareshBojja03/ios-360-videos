@@ -14,7 +14,10 @@ let package = Package(
             name: "NYT360Video",
             dependencies: [],
             path: "Sources/NYT360Video",
-            publicHeadersPath: "include"
+             publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("Sources/NYT360Video/include")
+            ]
         ),
         .testTarget(
             name: "NYT360VideoTests",
